@@ -23,8 +23,7 @@ jobs:
   build-project:
     runs-on: ubuntu-latest
     env:
-      BASE_PATH: '/CyrilsCV'
-
+      BASE_PATH: /${{github.event.repository.name}}
     steps:
       - name: Checkout
         uses: actions/checkout@v4

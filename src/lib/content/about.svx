@@ -11,8 +11,8 @@ This is my **about** page written in *markdown*.
 My previous work experience includes various projects in web development and software engineering.
 
 ## Contact
-Feel free to reach out to me at [cyril@example.com](mailto:cyril@example.com).
+Feel free to reach out to me at [your-email@example.com](mailto:your-email@example.com).
 
 ## Social Media
-- [GitHub](https://github.com/cyrils)
-- [YouTube](https://youtube.com/@cyrils)
+- [GitHub](https://github.com/)
+- [YouTube](https://youtube.com/@)

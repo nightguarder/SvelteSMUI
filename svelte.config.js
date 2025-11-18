@@ -9,6 +9,9 @@ import { dirname, join } from 'node:path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const path_to_layout = join(__dirname, "src/lib/layouts/MDLayout.svelte");
 
+const dev = process.env.NODE_ENV === 'development';
+const base = process.env.BASE_PATH || '';
+
 const config = {
 	// Consult https://svelte.dev/docs/kit/integrations
 	// for more information about preprocessors
@@ -32,6 +35,7 @@ const config = {
 			precompress: false,
 			strict: true,
 		}),
+		
 		paths: {
 			base: process.argv.includes('dev') ? '' : (process.env.BASE_PATH || ''),
 			relative: false 

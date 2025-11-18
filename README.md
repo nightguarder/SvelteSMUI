@@ -1,38 +1,101 @@
-# sv
+# SvelteKit Material Portfolio Template
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A modern, responsive portfolio template built with SvelteKit and Svelte Material UI (SMUI). This starter kit combines the performance of SvelteKit's static site generation with the polished design of Material Design components.
 
-## Creating a project
+> **Note**: This is a template repository. To use it, click "Use this template" or [create a new repository](https://github.com/nightguarder/CyrilsCV/generate) from this template.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 🎨 Features
 
-```sh
-# create a new project in the current directory
-npx sv create
+- ⚡ Blazing fast static site generation (SSG)
+- 🎨 Material Design components with Svelte Material UI (SMUI)
+- 📱 Fully responsive layout for all devices
+- 📝 Project showcase section with markdown support
+- 📧 Contact form with form handling
+- 🌓 Dark/light theme support
+- 🔍 SEO optimized
+- 🚀 GitHub Pages ready
 
-# create a new project in my-app
-npx sv create my-app
+## 🛠️ Tech Stack
+
+- [SvelteKit](https://kit.svelte.dev/) - Next-gen web framework
+- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
+- [Svelte Material UI (SMUI)](https://sveltematerialui.com/) - Material Design components
+- [mdsvex](https://mdsvex.com/) - Markdown support for Svelte
+- [Vite](https://vitejs.dev/) - Next generation frontend tooling
+- [GitHub Actions](https://github.com/features/actions) - CI/CD pipeline
+
+## 🚀 Quick Start
+You can also start from scratch with ``npx sv create my-app``
+[read more](https://svelte.dev/docs/kit/creating-a-project) 
+1. **Create a new repository**
+   - Click "Use this template" or [create a new repository](https://github.com/nightguarder/CyrilsCV/generate)
+   - Clone your new repository:
+   ```bash
+     git clone https://github.com/your-username/your-repo.git
+     cd your-repo
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   pnpm install
+   ```
+
+3. **Start developing**
+   ```bash
+   pnpm dev --open #npm run dev
+   ```
+   Open [http://localhost:5173](http://localhost:5173) in your browser
+
+4. **Customize**
+   - Update `src/app.html` - Site metadata and favicon
+   - Edit `src/routes/+page.svelte` - Homepage content
+   - Add your projects to `src/lib/data/projects.ts`
+   - Update theme colors in `src/app.postcss`
+
+   - Adjust the build command if you change the build directory
+
+5. **Enable GitHub Pages**
+   - Go to your repository Settings > Pages
+   - Source > Select Github Actions
+
+
+## 🚀 Deployment
+
+### GitHub Pages (Recommended)
+If having problems refer to [SvelteKit](https://svelte.dev/docs/kit/adapter-static#GitHub-Pages) config.
+
+1. Push your changes to the `main` branch
+2. **Enable GitHub Pages**
+   - Go to your repository Settings > Pages
+   - Source > Select Github Actions
+3. GitHub Actions will automatically **build** and **deploy** to GitHub Pages
+   - You should see: 
+   - >Your site was last deployed to the github-pages environment by the Deploy to GitHub Pages workflow.
+    [Learn more about deploying to GitHub Pages using custom workflows](https://docs.github.com/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow)
+4. Your site will be available at:
+   - `https://username.github.io` (for user/organization sites)
+   - `https://username.github.io/repository-name` (for project sites)
+
+Adjust the build command in `.github/workflows/deploy.yml` if having problems.
+
+## 🛠️ Development
+
+```bash
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+
+# Build for production
+pnpm build
+
+# Preview production build
+pnpm preview
 ```
 
-## Developing
+## 📄 License
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+MIT - Feel free to use this template for your own portfolio! If you like it, consider giving it a ⭐️ on GitHub.
