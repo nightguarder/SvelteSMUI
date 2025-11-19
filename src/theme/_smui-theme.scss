@@ -1,0 +1,52 @@
+@use 'sass:color';
+
+@use '@material/theme/color-palette';
+
+// Svelte Colors!
+// Configure the Material theme first. IMPORTANT: you must configure
+// `@material/theme` before any other module that loads it (for example
+// typography or other MDC packages). The Sass module system only allows
+// configuring a module the first time it is loaded.
+@use '@material/theme/index' as theme with (
+	$primary: #ff3e00,
+	$secondary: #676778,
+	$surface: #fff,
+	$background: #fff,
+	$error: color-palette.$red-900
+);
+
+// Now import typography after configuring the theme.
+@use '@material/typography/index' as typography;
+
+html,
+body {
+	background-color: theme.$surface;
+	color: theme.$on-surface;
+}
+
+a {
+	color: #40b3ff;
+}
+a:visited {
+	color: color.scale(#40b3ff, $lightness: -35%);
+}
+
+/* Example typography includes (apply as needed). See
+	 https://sveltematerialui.com/TYPOGRAPHY.md for details. */
+html {
+	@include typography.typography('body1');
+}
+
+h1 {
+	@include typography.typography('headline1');
+}
+h2 {
+	@include typography.typography('headline2');
+}
+h3 {
+	@include typography.typography('headline3');
+}
+
+caption {
+	@include typography.typography('caption');
+}

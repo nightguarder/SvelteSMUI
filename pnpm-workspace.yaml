@@ -1,2 +1,7 @@
+ignoredBuiltDependencies:
+  - node-sass
+
 onlyBuiltDependencies:
+  - '@parcel/watcher'
   - esbuild
+  - svelte-preprocess

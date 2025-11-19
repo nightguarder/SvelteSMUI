@@ -1,6 +1,7 @@
 <script>
 	export let frontmatter = {};
-	import Test from '$lib/components/test.svelte';
+
+
 </script>
 
 --- 
@@ -11,7 +12,6 @@ author: Fancy Dev
 <h1>{frontmatter.title}</h1>
 <br />
 You can also insert custom components inside the .svx file:
-<Test></Test>
 
 <style>
 	h1 {

@@ -1,0 +1,42 @@
+---
+title: "Markdown + mdsvex example"
+---
+
+# Markdown & mdsvex example
+
+This page demonstrates how you can write content with mdsvex: standard Markdown plus inline Svelte.
+
+## Frontmatter
+
+The top of this file contains YAML frontmatter. You can use those fields in layouts or for metadata.
+
+## Inline Svelte
+
+Here's a small interactive Svelte snippet embedded directly in the Markdown page.
+
+<script>
+  let count = 0;
+</script>
+
+<button on:click={() => count++}>
+  Clicked {count} {count === 1 ? 'time' : 'times'}
+</button>
+
+## Code example
+
+You can include code fences as usual:
+
+```svelte
+<script>
+  let name = 'Svelte';
+</script>
+
+<p>Hello {name}!</p>
+```
+
+## Lists and links
+
+- mdsvex supports lists
+- links: [SvelteKit docs](https://kit.svelte.dev)
+
+Feel free to copy this file and use it as a starting point for your markdown content pages.
