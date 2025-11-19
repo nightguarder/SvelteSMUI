@@ -59,10 +59,6 @@
 		gap: 1rem;
 		flex-wrap: wrap;
 	}
-	.demo {
-		min-width: 240px;
-		padding: 0;
-	}
 	.card-content {
 		padding: 1rem;
 	}
