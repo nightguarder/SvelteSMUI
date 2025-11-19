@@ -1,5 +1,6 @@
 <script lang="ts">
 	// Simple index for the examples
+	import { resolve } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -13,8 +14,8 @@
 	</p>
 
 	<ul>
-		<li><a href="/examples/smui">SMUI examples (buttons, cards, text fields)</a></li>
-		<li><a href="/examples/markdown">Markdown + mdsvex example</a></li>
+		<li><a href={resolve('/examples/smui')}>SMUI examples (buttons, cards, text fields)</a></li>
+		<li><a href={resolve('/examples/markdown')}>Markdown + mdsvex example</a></li>
 	</ul>
 </main>
 
